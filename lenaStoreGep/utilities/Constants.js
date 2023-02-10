@@ -1,0 +1,27 @@
+
+export const AppKey = 'AppKey';
+export const APIRoute = 'http://mercadaodasflores.sytes.net/si'; //'http://invius.ddns.net/si';
+export const APIRouteAlt = 'http://192.168.1.115/si'; //'http://192.168.1.100/si'
+export const PlatformExport = 'android'; //windows, android
+export const CreateProduct = '/products/new';
+export const SetPhoto = '/products/newphoto';
+export const ProductsByCategory = '/products/bycategory';
+export const Photo = '/products/photo';
+export const Categories = '/products/categories';
+export const ChangeStateProduct = '/products/changestate';
+export const ProductsOutOfSale = '/products/outofsale';
+export const RemoveProduct = '/products/remove';
+export const NewPurchases = '/sales/newpurchases';
+export const FinilizedPurchases = '/sales/finalized';
+export const OldPurchases = '/sales/old';
+export const Purchase = '/sales/purchase';
+export const ChangeStatePurchase = '/sales/changestate';
+export const Comment = '/sales/comment';
+export const EditProduct = '/products/edit';
+export const EditProductPhoto = '/products/edit/photo';
+export const ConfigAll = '/config/all';
+export const SetConfig = '/config';
+export const SalesRemove = '/sales/remove';
+export const TestOnline = '/products/UI';
+export const TestOnlinePhoto = '/products/UI/photo';
+export const Notifications = '/sales/notifications';
