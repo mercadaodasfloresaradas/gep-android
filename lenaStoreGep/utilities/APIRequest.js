@@ -8,7 +8,9 @@ const comunHeaders = {
 };
 
 const getAPIURL = (route) =>{
-    return (global.globalApp.getSelectedAPI() === 'external' ? Constants.APIRoute : Constants.APIRouteAlt) + route;
+    const result = (global.globalApp.getSelectedAPI() === 'external' ? Constants.APIRoute : Constants.APIRouteAlt) + route;
+    console.log(result);
+    return result;
 };
 
 /**
@@ -964,6 +966,7 @@ export const createProduct = async (name, price, description, category, img64) =
             "limitDaily": 0,
             "facebook": "test",
             "instagram": "test",
+            "contactsPage": "test",
         }
     }
     {

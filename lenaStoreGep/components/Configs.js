@@ -24,6 +24,7 @@ export default class Configs extends Component {
                 finalized: '',
                 facebook: '',
                 instagram: '',
+                contactsPage: '',
             },
             storeName: '',
             welcome: '',
@@ -41,6 +42,7 @@ export default class Configs extends Component {
             finalized: '',
             facebook: '',
             instagram: '',
+            contactsPage: '',
       };
 
       this.save = this.save.bind(this);
@@ -86,6 +88,7 @@ export default class Configs extends Component {
         data.finalized = this.state.finalized;
         data.facebook = this.state.facebook;
         data.instagram = this.state.instagram;
+        data.contactsPage = this.state.contactsPage;
 
         global.globalApp.showOverlay();
 
@@ -197,6 +200,11 @@ export default class Configs extends Component {
                 <TextInput placeholder="www.instragram.com"
                     onChangeText={(val)=>this.setState({instagram: val})}
                     value={this.state.instagram}
+                />
+                <Text>Pagina de Contactos</Text>
+                <TextInput multiline={true} placeholder="Pagina de Contactos"
+                    onChangeText={(val)=>this.setState({contactsPage: val})}
+                    value={this.state.contactsPage}
                 />
                 <View style={styles.spaceBottom}/>
             </View>

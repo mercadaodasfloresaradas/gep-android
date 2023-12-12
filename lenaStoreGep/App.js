@@ -35,6 +35,7 @@ import WindowsModal from './components/ModalWindows';
 import MobileModal from './components/ModalMobile';
 import Configs from './components/Configs';
 import MessagingAndDetailsContainer from './components/MessagingAndDetailsContainer';
+import SendDetails from './components/SendDetails';
 import NewMessage from './components/NewMessage';
 import NewProduct from './components/NewProduct';
 import RegisterAppKey from './components/RegisterAppKey';
@@ -310,6 +311,13 @@ const App: () => React$Node = () => {
              saleData={saleIDState} />
           </View>
         );
+        case 'purchaseSendDetails':
+        return (
+          <View>
+            <SendDetails
+             saleData={saleIDState} />
+          </View>
+        );
         case 'newMessage':
           return (
             <View>
@@ -373,6 +381,7 @@ const App: () => React$Node = () => {
                 onPress={() => {
                   setSelectedAPI('external');
                 }}/>
+              <Text>{`Selected: ${selectedAPI}`}</Text>
             </View>
           );
         default:

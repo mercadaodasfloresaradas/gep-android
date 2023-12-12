@@ -17,6 +17,7 @@ export default class OrderRow extends Component {
     this.nextAction = this.nextAction.bind(this);
     this.openDetails = this.openDetails.bind(this);
     this.remove = this.remove.bind(this);
+    this.openSendDetails = this.openSendDetails.bind(this);
   }
 
 
@@ -154,6 +155,11 @@ export default class OrderRow extends Component {
     global.globalApp.openModal('purchaseDetails');
   }
 
+  openSendDetails(){
+    global.globalApp.saleForModal({id: this.state.id, state: this.state.sale.state});
+    global.globalApp.openModal('purchaseSendDetails');
+  }
+
   render() {
     return (
       <View style={styles.fullRow}>
@@ -169,9 +175,9 @@ export default class OrderRow extends Component {
               </TouchableOpacity>
             </View>
             <View style={[styles.elementRow, this.state.sale.hasNotifications ? styles.alert : styles.innerNormal]}>
-              <TouchableOpacity onPress={this.openDetails}>
-                <Text style={styles.elementRowText}>{'TLM: ' + this.state.sale.phone}</Text>
+              <TouchableOpacity onPress={this.openSendDetails}>
                 <Text style={styles.elementRowText}>{this.state.sale.NIF ? ('NIF: ' + this.state.sale.NIF) : ''}</Text>
+                <Text style={styles.elementRowText}>{":::Clique para detalhes:::"}</Text>
               </TouchableOpacity>
             </View>
             <View style={[styles.elementRow, this.state.sale.hasNotifications ? styles.alert : styles.innerNormal]}>

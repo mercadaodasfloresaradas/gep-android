@@ -317,6 +317,7 @@ export default class NewProduct extends Component {
                         </View>
                     </TouchableOpacity>
                 </View>
+                <View style={styles.spacer}/>
             </View>
 
         );
@@ -368,6 +369,9 @@ const styles = StyleSheet.create({
     },
     margin:{
         marginRight: 10,
+    },
+    spacer:{
+        height: 50
     },
     plusIMG: {
         width: '100%',

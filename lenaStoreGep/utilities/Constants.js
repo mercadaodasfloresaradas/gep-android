@@ -1,7 +1,7 @@
 
 export const AppKey = 'AppKey';
-export const APIRoute = 'http://mercadaodasflores.sytes.net/si'; //'http://invius.ddns.net/si';
-export const APIRouteAlt = 'http://192.168.1.115/si'; //'http://192.168.1.100/si'
+export const APIRoute = 'http://invius.ddns.net/si'; //'http://invius.ddns.net/si';'http://mercadaodasflores.sytes.net/si';
+export const APIRouteAlt = 'http://192.168.1.115/si'; //'http://192.168.1.100/si''http://192.168.1.115/si' 'http://localhost'
 export const PlatformExport = 'android'; //windows, android
 export const CreateProduct = '/products/new';
 export const SetPhoto = '/products/newphoto';
